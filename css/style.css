@@ -1,0 +1,1013 @@
+/*
+
+  Basis
+
+*/
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body{
+  background-color: rgb(255, 255, 255  );
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+body>header{
+  background-color: rgb(255, 255, 255);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(84,84,84,0.4);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(84,84,84,0.4);
+  box-shadow: 0px 4px 5px 0px rgba(84,84,84,0.4);
+}
+
+main{
+  max-width: none;
+  transition: all 1s ease;
+
+}
+
+body > section:last-of-type{
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/klmfoto.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+figure{
+  position:relative;
+}
+
+section figure{
+  display:flex;
+  flex-direction: row-reverse;
+  margin:1em;
+  max-width: 27em;
+  height: 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+#content section:nth-child(1) figure{
+  background-image: url("../images/samenhang.png");
+}
+#content section:nth-child(2) figure{
+  background-image: url("../images/letterlijk.png");
+}
+#content section:nth-child(3) figure{
+  background-image: url("../images/alzheimer.png");
+}
+#content section:nth-child(4) figure{
+  background-image: url("../images/content4.jpeg");
+}
+#content section:nth-child(5) figure{
+  background-image: url("../images/content2.jpeg");
+}
+#content section:nth-child(6) figure{
+  background-image: url("../images/content3.jpeg");
+}
+#content section:nth-child(7) figure{
+  background-image: url("../images/kanoe.jpeg");
+}
+#content section:nth-child(8) figure{
+  background-image: url("../images/content5.jpeg");
+}
+
+figure:nth-child(3){
+  display:flex;
+  justify-content: flex-end;
+  margin:1em;
+  max-width: 27em;
+  height: 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/alzheimer.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+figure:nth-child(4){
+  display:flex;
+  justify-content: flex-end;
+  margin:1em;
+  max-width: 27em;
+  height: 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/samenhang.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+figure:nth-child(5){
+  display:flex;
+  justify-content: flex-end;
+  margin:1em;
+  max-width: 27em;
+  height: 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/letterlijk.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+figure:nth-child(6){
+  display:flex;
+  justify-content: flex-end;
+  margin:1em;
+  max-width: 27em;
+  height: 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/samenhang.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+figure:nth-child(7){
+  display:flex;
+  justify-content: flex-end;
+  margin:1em;
+  max-width: 27em;
+  height: 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/samenhang.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+figure:nth-child(8){
+  display:flex;
+  justify-content: flex-end;
+  margin:1em;
+  max-width: 27em;
+  height: 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/samenhang.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+#content{
+  transition: all 0.3s ease-in;
+}
+#content section {
+  max-width:23em;
+  margin:1em;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(143,143,143,0.5);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(143,143,143,0.5);
+  box-shadow: 0px 3px 3px 0px rgba(143,143,143,0.5);
+
+}
+figure figcaption{
+  background-color: rgba(0, 161, 228, 0.9);
+  padding: 2em 4em;
+  height: 5em;
+  color: rgb(255, 255, 255);
+  min-width: 9em;
+}
+
+figure span{
+  position: absolute;
+  left:1em;
+  padding:0.2em 0.5em;
+  background-color:rgb(255,255,255);
+  font-size:2em;
+  color:rgb(13, 166, 224);
+}
+
+#content figure button{
+  position: absolute;
+  margin-top: 5em;
+  background-color: rgb(255, 255, 255);
+  color:rgb(231, 123, 47);
+  padding:0.8em 1em;
+  border-radius:0;
+  border:none;
+}
+
+nav{
+  overflow:hidden;
+  max-height: 0;
+  background-color: rgb(13, 166, 224);
+  transition: all 400ms ease-in-out;
+}
+
+body > header >ul{
+  padding:1em;
+  list-style: none;
+}
+
+body > header > ul >li{
+  padding:1em 0em;
+  border-bottom:1px solid rgb(255, 255, 255);
+  color:rgb(255, 255, 255);
+}
+
+li:last-child{
+  border:0;
+}
+
+body > section  > button {
+  display:none;
+}
+
+/*
+
+  Typografie
+
+*/
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: rgb(13, 166, 224);
+}
+
+body > header p{
+  padding:2em;
+  color: rgb(13, 166, 224);
+}
+
+body > header h1 {
+  padding:0em 0.5em;
+
+}
+
+body > header h1 a{
+  font-size:1em;
+}
+
+a{
+  color:inherit;
+  text-decoration: none;
+}
+main section p{
+  margin:0.5em;
+  padding:0em 0.5em;
+}
+
+body > section > p{
+  position:absolute;
+  display:static;
+  color:rgb(46, 46, 46);
+  background-color:rgba(255,255,255,0.9);
+  padding:1em;
+  font-size: 1.2em;
+  width:10em;
+  margin:auto;
+  bottom:0;
+  margin:1em;
+}
+
+h2{
+  font-size:1em;
+  color:rgb(0,91,130);
+  padding:0em 1em;
+  font-weight: 600;
+}
+
+.slide{
+  max-height: 25vh;
+}
+
+ul{
+  list-style: none;
+}
+
+nav > ul> li{
+  padding:1em;
+  border-bottom:1px solid rgba(255,255,255,0.9);
+  color:rgba(255,255,255,0.9);
+}
+body > header{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+body > header div{
+  position:relative;
+  flex-basis: 100%;
+  display: flex;
+  height: auto;
+  padding: 0;
+  background-color:  rgb(255, 255, 255  );
+  justify-content: space-between;
+}
+body > header nav{
+  flex-basis: 100%;
+}
+
+/*
+
+  Filter
+
+*/
+
+aside:nth-of-type(2) {
+  position: fixed;
+  background-color:rgb(255,255,255);
+  top:0;
+  z-index:200;
+  left:0;
+  width:22em;
+  height:100vh;
+  transform: translateX(-22em);
+  transition: all 0.7s ease-in-out
+}
+
+aside.slideLeft:nth-of-type(2) {
+    transform: translateX(0);
+}
+
+body > aside > header > ul > li{
+  color:rgb(0,91,130);
+  padding:1em;
+  list-style: none;
+}
+
+body > aside > header > ul > li:last-child{
+  margin-left:4em;
+}
+
+aside > header > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+aside > section{
+  display:flex;
+  background-color: rgb(13, 166, 224);
+  width:22em;
+  flex-direction: column;
+  justify-content: center;
+}
+
+aside>ul:before,
+aside>ul:after {
+    content: " ";
+    display: table;
+}
+
+aside>ul:after {
+    clear: both;
+}
+
+aside > section h1{
+  color:rgb(255,255,255);
+  margin:auto;
+  padding:1em 0;
+}
+aside > section > input{
+  width:6em;
+  margin:auto;
+  border:none;
+  background:none;
+  padding-bottom:1em;
+  color:rgb(255,255,255);
+}
+aside > section > input:focus{
+  border:none;
+  outline:none;
+}
+
+aside > ul > li{
+  border-bottom:1px solid  rgb(13, 166, 224);
+  color:rgb(13, 166, 224);
+  padding:1em;
+}
+aside > ul > li >span{
+  float:right;
+  font-size:1.4em;
+}
+
+aside > button{
+  padding:0.5em;
+  border:none;
+  background:none;
+  margin-top:1em;
+  margin-left:1em;
+  font-weight:bold;
+  color:rgb(0,91,130);
+}
+fieldset > form > button{
+  margin-top:1em;
+  background-color:rgb(231, 123, 47);
+  padding:0.5em;;
+  border-width: 0;
+  color:rgb(255, 255, 255);
+  float:right;
+  margin-bottom:2em;
+}
+/*
+
+  Formulier
+
+*/
+
+#formulier {
+  background-color: rgb(255, 255, 255);
+}
+
+main form {
+  margin-top:1em;
+}
+main form fieldset label {
+  display: block;
+  line-height: 32px;
+  width: 33%;
+  cursor: default;
+  padding: 1em 0em;
+}
+
+main form h1 {
+  font-family: 'Raleway';
+  font-size: 1.375em;
+  font-weight:lighter;
+  color: rgba(0, 161, 228, 0.9);
+  padding:1em 0em;
+}
+
+#formulier form legend {
+  font-family: 'Raleway';
+  font-size: 1em;
+  padding:1em 0em;
+  font-weight: bold;
+  color: #005b82;
+}
+
+form {
+  margin:0 auto;
+}
+
+li > input {
+  flex-basis: 33;
+}
+
+main {
+  margin:auto;
+  display: flex;
+  flex-flow: column;
+}
+
+fieldset {
+  border:0 none;
+}
+
+main form fieldset input {
+  display:block;
+  margin: 0;
+  height: 2em;
+  line-height: 15px;
+  padding: 6px;
+  width: 20em;
+  color: #003145;
+  border: 1px solid #abd7ea;
+  border-radius: 3px;
+  background-color: #fcfefe;
+}
+
+#formulier form fieldset {
+  border-top: 1px solid rgb(0, 161, 228);
+}
+
+#formulier form fieldset:last-child {
+  border-top:none;
+}
+
+article > div {
+  background-color: rgba(0, 161, 228, 0.9);
+  position: relative;
+  width: 16.5em;
+  margin-bottom: -6.4em;
+  margin-top: -3.4em;
+  float: right;
+  top: 3.4em;
+}
+fieldset > button {
+  margin-top:1em;
+  background-color:rgb(231, 123, 47);
+  padding:0.5em;;
+  border-width: 0;
+  color:rgb(255, 255, 255);
+  float:right;
+  margin-bottom:2em;
+}
+
+#formulier form fieldset input:invalid {
+  border:1px solid red;
+}
+
+#formulier form fieldset input:valid {
+  border:1px solid green;
+}
+
+/*////////////////////////////////////////////////////////////
+
+                        inlogscherm
+
+////////////////////////////////////////////////////////////*/
+
+#inloggen{
+  background-color:rgb(250,250,250);
+  padding:1em;
+  border-radius:0.3em;
+  position:absolute;
+  z-index:2000;
+  width:12em;
+  border-radius: 0.6em;
+  -webkit-box-shadow: 4px 6px 30px 0px rgba(0,0,0,0.40);
+  -moz-box-shadow: 4px 6px 30px 0px rgba(0,0,0,0.40);
+  box-shadow: 4px 6px 30px 0px rgba(0,0,0,0.40);
+  margin-top:-30em;
+  transition: all 1.5s ease;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inloggen legend{
+  padding:1em 0em;
+  font-size: 1.4em;
+}
+
+#inloggen input{
+  display:block;
+  margin: 0;
+  height: 2em;
+  line-height: 15px;
+  padding: 6px;
+  width: 18em;
+  color: #003145;
+  border: 1px solid #abd7ea;
+  border-radius: 3px;
+  background-color: #fcfefe;
+  margin-top:1em;
+  margin-bottom:1em;
+  margin-left:1em;
+}
+
+#inloggen form label {
+  padding:0;
+  margin-top:1em;
+  margin-left:1em;
+}
+
+#inloggen p {
+  padding:0;
+  font-size:0.8em;
+  color:rgb(231, 123, 47);
+  margin-left:1.5em;
+}
+
+#inloggen button{
+  padding:0.2em 0.7em;
+  border-radius:0.4em;
+}
+
+#inloggen span{
+  float:right;
+}
+
+.slideTop{
+  margin-top:4em !important;
+}
+
+/*////////////////////////////////////////////////////////////
+
+                            Lijst
+
+////////////////////////////////////////////////////////////*/
+
+body > aside:first-of-type{
+  position: fixed;
+  background-color:rgb(255, 255, 255);
+  width:22em;
+  transition: all 1.5s ease;
+  transform:translateX(-22em);
+  z-index: 1000;
+  height: 100vh;
+  overflow-y: scroll;
+}
+body > aside.slideLeft:first-of-type{
+  transform:translateX(0);
+}
+
+body > aside:first-of-type >ul{
+  list-style: none;
+  padding:0;
+  width:80%;
+  margin:auto;
+  margin-top:2em;
+}
+body > aside:first-of-type ul:first-of-type{
+  list-style: none;
+  padding:0;
+  margin:auto;
+  margin-top:0em;
+
+}
+body > aside:first-of-type >div{
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+body > aside:first-of-type>ul>li{
+  display:flex;
+  padding:1em 0em;;
+}
+body > aside:first-of-type> ul>li:first-of-type{
+  font-weight: bold;
+  color:rgba(0, 161, 228, 0.9);
+}
+body >aside:first-of-type >ul>li>a {
+  color: rgb(255, 255, 255  );
+  text-decoration:none;
+}
+
+div {
+  padding:1em;
+  background-color:#2e2e2e;
+  height:1em;
+  color:black;
+  font-size: 1.1em;
+}
+
+body > aside:first-of-type > header > ul > li{
+  color:rgb(0,91,130);
+  padding:1em;
+  list-style: none;
+}
+
+body > aside:first-of-type > header > ul > li:last-child{
+  margin-left:4em;
+}
+
+section:first-of-type > header > ul {
+  display: flex;
+  flex-direction: row;
+}
+/*////////////////////////////////////////////////////////////
+
+                           Artikels
+
+////////////////////////////////////////////////////////////*/
+
+#tanka {
+  background-color:rgb(220,220,199);
+}
+
+#jap{
+  display:flex;
+  margin:auto;
+}
+
+#jap img{
+  z-index:100;
+  padding-top:10em;
+  width:4em;
+  display:flex;
+  margin:auto;
+  animation: vierde 30s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#jap figure{
+  margin: 0;
+}
+
+#jap figure:nth-of-type(1){
+  position:fixed;
+  top:0;
+  left:0;
+  margin-top: -20em;
+  margin-left: -40em;
+  width: 40em;
+  height: 40em;
+  background: -webkit-linear-gradient(rgba(222, 208, 173, 1), rgba(220, 176, 89, 0.8));
+  background: -o-linear-gradient(rgba(222, 208, 173, 1), rgba(220, 176, 89, 0.8));
+  background: linear-gradient(rgba(222, 208, 173, 1), rgba(220, 176, 89, 0.8));
+  z-index: -10;
+  border-radius:50%;
+  animation: eerste 10s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#jap figure:nth-of-type(2){
+  position:fixed;
+  top:0;
+  left:0;
+  margin-top: -20em;
+  margin-left: -3em;
+  width: 20em;
+  height: 20em;
+  border-radius:50%;
+  background: -webkit-linear-gradient(rgba(154, 45, 29, 0.8), rgba(81, 52, 54, 0.8));
+  background: -o-linear-gradient(rgba(154, 45, 29, 0.8), rgba(81, 52, 54, 0.8));
+  background: linear-gradient(rgba(154, 45, 29, 0.8), rgba(81, 52, 54, 0.8));
+  z-index: -9;
+  animation: tweede 32s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#jap figure:nth-of-type(3){
+  position:fixed;
+  top:0;
+  left:0;
+  margin-top:-30em;
+  margin-left:-10em;
+  width:10em;
+  height:10em;
+  border-radius:50%;
+  background: -webkit-linear-gradient(rgba(29, 127, 154, 0.8), rgba(52, 66, 81, 1));
+  background: -o-linear-gradient(rgba(29, 127, 154, 0.8), rgba(52, 66, 81, 1));
+  background: linear-gradient(rgba(29, 127, 154, 0.8), rgba(52, 66, 81, 1));
+  z-index: -9;
+  animation: derde 15s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#alzheimer{
+  background: url("../images/artikelen/ma.png") no-repeat;
+  margin-top: 0.5em;
+  height: 110em;
+  width: 23em;
+}
+
+#vurig{
+  background: url("../images/artikelen/ml.png") no-repeat;
+  margin-top: 0.5em;
+  height: 110em;
+  width: 23em;
+}
+
+#zwart{
+  background-color: rgb(0, 0, 0);
+}
+
+
+/*
+
+  Animaties
+
+*/
+@keyframes eerste{
+
+    0% {
+      transform: translate(60vw, 0vh);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(60vw, 100vh);
+      opacity:100;
+  }
+}
+
+@keyframes tweede{
+
+    0% {
+      transform: translate(60vw, 0vh);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(60vw, 100vh);
+      opacity:100;
+  }
+}
+
+@keyframes derde{
+
+    0% {
+      transform: translate(60vw, 20vh);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(60vw, 110vh);
+      opacity:100;
+  }
+}
+
+@keyframes vierde{
+
+    0% {
+      transform: translate(0vw, -10vh);
+    }
+    25% {
+      transform: translate(0vw, 0vh);
+    }
+    50% {
+      transform: translate(0vw, 5vh);
+    }
+    100% {
+      transform: translate(0vw, 0vh);
+  }
+}
+/*////////////////////////////////////////////////////////////
+
+                           Tablet
+
+////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width : 29em){
+
+  #content{
+    display:flex;
+    max-height: 35em;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin:auto;
+  }
+
+  #content figure{
+    min-width: 20em;
+    max-width:40em;
+  }
+
+  section{
+    margin:0;
+    padding:0;
+  }
+
+
+  fieldset:last-child{
+    margin-top:3.1em;
+    border:none;
+  }
+
+}
+
+@media only screen and (min-width : 46em){
+
+  #alzheimer {
+    background: url("../images/artikelen/ta.png") no-repeat;
+    width: 45em;
+    height: 65em;
+  }
+  #vurig{
+    background: url("../images/artikelen/tl.png") no-repeat;
+    width: 45em;
+    height: 65em;
+  }
+  #content {
+    justify-content: center;
+    padding-bottom: 2em;
+  }
+  fieldset{
+    float:left;
+  }
+  body > header ul{
+    display:inline;
+    margin-top:1em;
+  }
+  body > header ul li{
+    color: rgba(0, 161, 228, 0.9);
+    display: inline;
+    margin-left:1em;
+    margin-top:2em;
+  }
+  body > section > button {
+    float:none;
+    display:block;
+    padding:0.5em 1.2em;
+    margin:auto;
+    margin-bottom: 6em;
+    border-radius:2em;
+    color:rgb(255,255,255);
+    background-color:rgb(231, 123, 47);
+    border:none;
+  }
+  body > section > p{
+    position: static;
+    margin:auto;
+    margin-top:4em;
+  }
+  #jap figure:nth-of-type(1){
+    margin-top: -20em;
+    margin-left: -30em;
+
+  }
+
+  #jap figure:nth-of-type(2){
+    margin-top: -20em;
+    margin-left: em;
+  }
+
+  #jap figure:nth-of-type(3){
+    margin-top:-30em;
+    margin-left:-15em;
+  }
+  body > header ul li {
+    color: rgb(255, 255, 255  );
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+}
+
+@media only screen and (min-width : 70em){
+  #content{
+    max-height: 45em;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: auto;
+    margin-top: 1em;
+  }
+
+  body> header div{
+    flex-basis: 50%;
+  }
+  body > header nav{
+    flex-basis: 44%;
+    height: 2em;
+    display: block;
+    max-height: inherit;
+    background-color:  rgb(255, 255, 255  );
+    padding: 2em;
+  }
+  body > header ul li {
+    color: rgb(13, 166, 224);
+    display: inline;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  body > header p {
+      display:none;
+  }
+
+}
+
+/*////////////////////////////////////////////////////////////
+
+                            Desktop
+
+////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width : 85em){
+  #alzheimer {
+    background: url("../images/artikelen/da.png") no-repeat;
+    width: 80em;
+    height: 55em;
+  }
+  #vurig{
+    background: url("../images/artikelen/dl.png") no-repeat;
+    width: 80em;
+    height: 55em;
+  }
+
+  #content section {
+      min-height: 27em;
+  }
+  body > section > p{
+    font-size:1.6em;
+  }
+
+  body > section> button{
+    margin-bottom: 3em;
+    border-radius: 2em;
+  }
+  section > p{
+    font-size:1.4em;
+  }
+  body > header nav{
+    flex-basis: 37%;
+  }
+
+}
+@media only screen and (min-width : 90em){
+  body > header nav{
+    flex-basis: 34%;
+  }
+}
+
+@media only screen and (min-width : 105em){
+  body > header nav{
+    flex-basis: 31%;
+  }
+}
