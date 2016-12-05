@@ -1010,7 +1010,7 @@ section:first-of-type > header > ul {
     flex-basis: 37%;
   }
   body > section > .main-button {
-    margin-bottom: 3em;
+    display:none;
   }
 
 }
