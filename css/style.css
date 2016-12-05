@@ -193,6 +193,7 @@ figure span{
   background-color:rgb(255,255,255);
   font-size:2em;
   color:rgb(13, 166, 224);
+  cursor: pointer;
 }
 
 .button{
@@ -231,6 +232,10 @@ li:last-child{
 body > section  > button {
   display:none;
 }
+nav > ul li{
+  cursor: pointer;
+}
+
 
 /*
 
@@ -901,7 +906,7 @@ section:first-of-type > header > ul {
     color:rgb(255,255,255);
     background-color:rgb(231, 123, 47);
     border:none;
-    width:7em;
+    width:8em;
   }
   body > section > p{
     position: static;
