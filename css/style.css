@@ -172,6 +172,7 @@ figure:nth-child(8){
 #content section {
   max-width:23em;
   margin:1em;
+  position: relative;
   -webkit-box-shadow: 0px 3px 3px 0px rgba(143,143,143,0.5);
   -moz-box-shadow: 0px 3px 3px 0px rgba(143,143,143,0.5);
   box-shadow: 0px 3px 3px 0px rgba(143,143,143,0.5);
@@ -194,9 +195,10 @@ figure span{
   color:rgb(13, 166, 224);
 }
 
-#content figure button{
+.button{
   position: absolute;
-  margin-top: 5em;
+  margin-top: -6em;
+  margin-left: 16em;
   background-color: rgb(255, 255, 255);
   color:rgb(231, 123, 47);
   padding:0.8em 1em;
@@ -546,7 +548,7 @@ fieldset > button {
   margin-right: auto;
 }
 
-#inloggen legend{
+#inloggen h2{
   padding:1em 0em;
   font-size: 1.4em;
 }
@@ -889,16 +891,17 @@ section:first-of-type > header > ul {
     margin-left:1em;
     margin-top:2em;
   }
-  body > section > button {
+  body > section > .main-button {
     float:none;
     display:block;
     padding:0.5em 1.2em;
     margin:auto;
-    margin-bottom: 6em;
+    margin-bottom:7em;
     border-radius:2em;
     color:rgb(255,255,255);
     background-color:rgb(231, 123, 47);
     border:none;
+    width:7em;
   }
   body > section > p{
     position: static;
@@ -944,7 +947,7 @@ section:first-of-type > header > ul {
     flex-basis: 50%;
   }
   body > header nav{
-    flex-basis: 44%;
+    flex-basis: 46%;
     height: 2em;
     display: block;
     max-height: inherit;
@@ -959,6 +962,9 @@ section:first-of-type > header > ul {
   }
   body > header p {
       display:none;
+  }
+  body > section > .main-button {
+    margin-bottom: 7em;
   }
 
 }
@@ -997,6 +1003,9 @@ section:first-of-type > header > ul {
   }
   body > header nav{
     flex-basis: 37%;
+  }
+  body > section > .main-button {
+    margin-bottom: 3em;
   }
 
 }
